@@ -6,8 +6,10 @@
 class StaticObj :
 	public Entity
 {
+private: 
+
 public:
-	StaticObj();
+	StaticObj(sf::Vector2f position, sf::Texture texture);
 	~StaticObj();
 };
 

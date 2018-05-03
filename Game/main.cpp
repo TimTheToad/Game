@@ -8,6 +8,7 @@ int main()
 	sf::Texture texture;
 
 	GameLogic game;
+	sf::Clock gameTime;
 
 	while (window.isOpen())
 	{
@@ -21,6 +22,8 @@ int main()
 				break;
 			}
 		}
+
+		game.update(gameTime.restart().asSeconds());
 
 		window.clear();
 		window.draw(game);

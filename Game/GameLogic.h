@@ -6,14 +6,15 @@
 #include "NonStaticObj.h"
 #include "StaticObj.h"
 
-#define IMAGE 0
+#define IMAGE_ID 0
+#define NR_OF_ENTITIES 1
 
 class GameLogic :public sf::Drawable
 {
 private: 
 
 	//Menu
-	Entity* body;
+	Entity** body;
 	TextureLoader textureLoader;
 
 	void draw(sf::RenderTarget& target, sf::RenderStates states)const override;
@@ -21,6 +22,7 @@ public:
 	
 	GameLogic();
 	~GameLogic();
+	void update(float deltaTime);
 
 };
 #endif 

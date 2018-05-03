@@ -13,8 +13,10 @@ private:
 
 public:
 
-	NonStaticObj(sf::Vector2f position, sf::Texture texture);
+	NonStaticObj(sf::Vector2f position, sf::Texture& texture);
 	~NonStaticObj();
+	void update(float deltaTime);
+
 };
 
 #endif

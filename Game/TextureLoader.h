@@ -3,7 +3,7 @@
 #include "SFML\Graphics.hpp"
 #include <iostream>
 
-#define NR_OF_TEXTURES 1
+#define NR_OF_TEXTURES 2
 
 
 class TextureLoader

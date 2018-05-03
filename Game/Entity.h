@@ -13,8 +13,14 @@ private:
 	void draw(sf::RenderTarget& target, sf::RenderStates states)const;
 
 public:
-	Entity(sf::Vector2f position, sf::Texture texture);
+	Entity(sf::Vector2f position, sf::Texture& texture);
 	~Entity();
+
+	void setPosition(sf::Vector2f& position);
+	void update(float deltaTime);
+
+	sf::Vector2f getPosition();
+	sf::Sprite getSprite();
 };
 
 #endif
