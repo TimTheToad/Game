@@ -5,6 +5,7 @@
 #include "Entity.h"
 #include "NonStaticObj.h"
 #include "StaticObj.h"
+#include "Player.h"
 
 #define IMAGE_ID 0
 #define NR_OF_ENTITIES 1

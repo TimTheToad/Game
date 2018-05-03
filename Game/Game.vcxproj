@@ -123,6 +123,7 @@
     <ClCompile Include="GameLogic.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="NonStaticObj.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="StaticObj.cpp" />
     <ClCompile Include="TextureLoader.cpp" />
   </ItemGroup>
@@ -130,6 +131,7 @@
     <ClInclude Include="Entity.h" />
     <ClInclude Include="GameLogic.h" />
     <ClInclude Include="NonStaticObj.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="StaticObj.h" />
     <ClInclude Include="TextureLoader.h" />
   </ItemGroup>
