@@ -2,8 +2,8 @@
 
 
 
-StaticObj::StaticObj(sf::Vector2f position, sf::Texture texture)
-	:Entity(position, texture)
+StaticObj::StaticObj(sf::Vector2f position, sf::Texture texture, sf::Vector2f size, sf::Vector2u nrOfImages)
+	:Entity(position, texture, size, nrOfImages)
 {
 }
 

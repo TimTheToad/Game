@@ -9,7 +9,7 @@ class StaticObj :
 private: 
 
 public:
-	StaticObj(sf::Vector2f position, sf::Texture texture);
+	StaticObj(sf::Vector2f position, sf::Texture texture, sf::Vector2f size, sf::Vector2u nrOfImages);
 	~StaticObj();
 };
 

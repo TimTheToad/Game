@@ -8,7 +8,7 @@ private:
 	bool canJump;
 	float gravity;
 public:
-	Player(sf::Vector2f position, sf::Texture& texture);
+	Player(sf::Vector2f position, sf::Texture& texture, sf::Vector2f size, sf::Vector2u nrOfImages);
 	~Player();
 
 	virtual void update(float deltaTime);

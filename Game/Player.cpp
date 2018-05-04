@@ -3,8 +3,8 @@
 
 
 
-Player::Player(sf::Vector2f position, sf::Texture & texture)
-	:NonStaticObj(position, texture)
+Player::Player(sf::Vector2f position, sf::Texture & texture, sf::Vector2f size, sf::Vector2u nrOfImages)
+	:NonStaticObj(position, texture, size, nrOfImages)
 {
 	this->canJump = true;
 	gravity = 10.0f;
