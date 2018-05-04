@@ -5,7 +5,8 @@ class Player
 	:public NonStaticObj
 {
 private:
-
+	bool canJump;
+	float gravity;
 public:
 	Player(sf::Vector2f position, sf::Texture& texture);
 	~Player();

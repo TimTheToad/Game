@@ -5,6 +5,14 @@
 void Entity::draw(sf::RenderTarget & target, sf::RenderStates states) const
 {
 	target.draw(body, states);
+
+	sf::FloatRect rect = body.getGlobalBounds();
+	sf::RectangleShape temp(sf::Vector2f(rect.width, rect.height));
+	temp.setPosition(rect.left, rect.top);
+	temp.setOutlineColor(sf::Color::Red);
+	temp.setOutlineThickness(2);
+	temp.setFillColor(sf::Color::Transparent);
+	target.draw(temp, states);
 }
 
 Entity::Entity(sf::Vector2f position, sf::Texture& texture)
