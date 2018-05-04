@@ -29,22 +29,7 @@ void Entity::setPosition(sf::Vector2f& position)
 void Entity::update(float deltaTime)
 {
 
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) // up
-	{
-		setPosition(sf::Vector2f(0.0f, -90.0f * deltaTime));
-	}
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) // right
-	{
-		setPosition(sf::Vector2f(150.0f * deltaTime, 0.0f));
-	}
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) // down
-	{
-		setPosition(sf::Vector2f(0.0f, 90.0f * deltaTime));
-	}
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) //left
-	{
-		setPosition(sf::Vector2f(-150.0f * deltaTime, 0.0f));
-	}
+	
 	getSprite().setPosition(getPosition().x, getPosition().y);
 
 }

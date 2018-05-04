@@ -19,7 +19,7 @@ public:
 
 	void setVelocity(sf::Vector2f& velocity);
 	void setPosition(sf::Vector2f& position);
-	void update(float deltaTime);
+	virtual void update(float deltaTime);
 
 	sf::Vector2f& getVelocity();
 	sf::Vector2f& getPosition();

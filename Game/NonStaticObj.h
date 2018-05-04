@@ -15,7 +15,7 @@ public:
 
 	NonStaticObj(sf::Vector2f position, sf::Texture& texture);
 	~NonStaticObj();
-	void update(float deltaTime);
+	virtual void update(float deltaTime);
 
 };
 

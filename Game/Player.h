@@ -10,7 +10,7 @@ public:
 	Player(sf::Vector2f position, sf::Texture& texture);
 	~Player();
 
-	void update(float deltaTime);
+	virtual void update(float deltaTime);
 };
 
 
