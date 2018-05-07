@@ -26,6 +26,12 @@ void NonStaticObj::setAnimationSpeed(float speed)
 	this->animationSpeed = speed;
 }
 
+void NonStaticObj::acceleration(sf::Vector2f speed)
+{
+	velocity += speed;
+	setPosition(velocity);
+}
+
 
 
 float NonStaticObj::getAnimationSpeed() const

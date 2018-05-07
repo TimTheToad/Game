@@ -8,6 +8,7 @@ Player::Player(sf::Vector2f position, sf::Texture & texture, sf::Vector2f size, 
 {
 	this->canJump = true;
 	gravity = 10.0f;
+	
 }
 
 Player::~Player()
@@ -17,9 +18,9 @@ Player::~Player()
 void Player::update(float deltaTime)
 {
 	
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) // up
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::W ) || sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) // up
 	{
-		setPosition(sf::Vector2f(0.0f, -120.0f * deltaTime));
+		acceleration(sf::Vector2f(0.0f, -120.0f * deltaTime));
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) // right
 	{
