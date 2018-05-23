@@ -4,8 +4,6 @@
 int main()
 {
 	sf::RenderWindow window(sf::VideoMode::getDesktopMode(), "Hermans Fuckboii!",sf::Style::Close | sf::Style::Titlebar | sf::Style::Resize);
-	sf::Sprite sprite;
-	sf::Texture texture;
 
 	GameLogic game;
 	sf::Clock gameTime;
